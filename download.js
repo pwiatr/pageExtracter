@@ -30,7 +30,7 @@ download(url, function(data) {
 			output.push($(e).attr("src"));
 		});
 		
-		fs.writeFile("ee", output.join('\n'), function (err) { if(err) console.log(err); console.log("Done!");});
+		fs.writeFile("tempResults/result", output.join('\n'), function (err) { if(err) console.log(err); console.log("Done!");});
 		
 		console.log("done!");
 	} else {
